@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Planeta Pastel, Pastelería" />
+        <meta name="robots" content="index,follow" />
+        <title>Planeta Pastel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/form.css" />
+    </head> 
+
+    <body>
+        <!-- Cabecera -->
+        <header>
+            <!-- Logo de la empresa-->
+            <figure class="logo">
+                <img src="./img/logo-pasteleria1.png"></img>
+            </figure>           
+            <!-- Barra de navegación del sitio -->
+            <div class="nav">
+                <a href="#">Inicio</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Administrador</a>
+            </div>
+        </header> 
+
+        <main class="menu">
+            
+            <!--Formulario-->
+            <form action="formulario.js" method="post">
+                    <div class="sabores">
+                        <h3>Selecciona los sabores que deseas agregar a tu pastel:</h3><br>
+
+                        <div>
+                        <input type="checkbox" id="manzana" name="sabores" value="Chocolate">
+                        <label for="manzana">Manzana</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="zanahoria" name="sabores" value="Zanahoria">
+                        <label for="manzana">Zanahoria</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="chocolate" name="sabores" value="Chocolate">
+                        <label for="chocolate">Chocolate</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="oreo" name="sabores" value="Oreo">
+                        <label for="oreo">Oreo</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="moka" name="sabores" value="Moka">
+                        <label for="moka">Moka</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="vainilla" name="sabores" value="Vainilla">
+                        <label for="vainilla">Vainilla</label><br><br>
+                        </div>
+                    
+                    </div>
+
+                    <div class="decoraciones">
+                        <h3>Selecciona las decoraciones que deseas agregar a tu pastel:</h3><br>
+
+                        <div>
+                        <input type="checkbox" id="cumple" name="decoraciones" value="Cumpleaños">
+                        <label for="cumple">Cumpleaños</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="zanahoria" name="decoraciones" value="Zanahoria">
+                        <label for="manzana">Zanahoria</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="chocolate" name="decoraciones" value="Chocolate">
+                        <label for="chocolate">Chocolate</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="oreo" name="decoraciones" value="Oreo">
+                        <label for="oreo">Oreo</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="moka" name="decoraciones" value="Moka">
+                        <label for="moka">Moka</label><br>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="vainilla" name="decoraciones" value="Vainilla">
+                        <label for="vainilla">Vainilla</label><br><br>
+                         </div>
+                   
+                    </div>
+
+                    <div>
+                        <label for="nombre">
+                            <span>Nombre Completo</span> 
+                                <input type="text" name="nombre" id="nombre" class="datos" autocomplete="name" required/>
+                        </label>
+                    </div> 
+                    <div>
+                        <label for="correo">
+                            <span>Correo electrónico</span> 
+                                <input type="email" name="correo" id="correo" class="datos" autocomplete="email" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="telefono">
+                            <span>Teléfono:</span> 
+                                <input type="tel" name="telefono" id="telefono" class="datos" autocomplete="tel" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="descripcion-pastel">
+                            <span>Detalles adicionales del pastel:</span> 
+                                <input type="text" size="40" name="descripcion-pastel" id="descripcion-pastel" minlength="90" class="datos" placeholder="¿Como te gustaría que prepararamos tu pastel?" />
+                        </label>
+                    </div><br><br>
+                    <div>
+                        <input type="submit" />
+                    </div>
+                    <div>
+                        <input type="reset" />
+                    </div>
+                    <br><br>
+                </form>
+      </main>
+    </body>
+
+    <footer>
+        <br><br>
+        <p>Av. Adolfo Lopez Mateos N°1838 <br>
+           Colonia Las Aguilas<br>
+           Zapopan, Jalisco</p>
+        <p>Teléfono: 3322114433<br>
+           Abrimos de Lunes a Viernes de 8am a 6pm</p>
+
+    </footer>
+</html>
